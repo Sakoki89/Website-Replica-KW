@@ -16,3 +16,37 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+
+/* Header */
+
+header {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.innerheader {
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgheader {
+    height: 1.5rem;
+}
+
+.headdata {
+    display: flex;
+    gap: 3rem;
+}
+
+.headphone, .headmail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
