@@ -50,3 +50,28 @@ header {
     gap: 0.5rem;
 }
 
+/* Responsive Design */
+
+@media (max-width: 1400px) {
+    .innerheader {
+        max-width: 90%
+    }
+}
+
+@media (max-width: 950px) {
+    .headdata {
+        display: none;
+    }
+    .innerheader {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* Scroll Box */
+
+.space {
+    height: 100vh;
+    background-color: pink;
+}
+
