@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="icon" href="img/favicon.png" type="image/png">
+    <script src="js/script.js" defer></script>
 
 </head>
 <body>
@@ -34,7 +35,9 @@
         <div class="innerwelcome">
             <div class="navbar">
                 <div class="navbarleft">
-                    <img class="logoimg" src="img/logo.png" alt="KW Dienstleistung Logo">
+                    <div class="logobox">
+                        <img class="logoimg" src="img/logo.png" alt="KW Dienstleistung Logo">
+                    </div>
                     <a class="link" href="#">Startseite</a>
                     <a class="link" href="#">Leistungen</a>
                     <a class="link" href="#">Heckenrechner</a>
@@ -42,20 +45,39 @@
                     <a class="link" href="#">Kontakt</a>
                 </div>
                 <div class="navbarright">
-                    <button class="button" type="submit">Angebot anfordern</button>
+                    <button class="button firstbutton" type="submit">Angebot anfordern</button>
+                    <button class="burger" id="burger"
+                    aria-controls="offcanvas"
+                    aria-expanded="false"
+                    aria-label="Menü öffnen">☰</button>
                 </div>
+                <div class="offcanvas" id="offcanvas" aria-hidden="true">
+                    <div class="offcanvas-header">
+                        <img class="offcanvas-logo" src="img/logo.png" alt="KW Dienstleistung Logo">
+                        <button class="offcanvas-close" id="offcanvasClose" aria-label="Menü schließen">×</button>
+                    </div>
+                    <nav class="offcanvas-nav">
+                        <a href="#">Startseite</a>
+                        <a href="#">Leistungen</a>
+                        <a href="#">Heckenrechner</a>
+                        <a href="#">Über uns</a>
+                        <a href="#">Kontakt</a>
+                        <a class="offcanvas-cta button" href="#">Angebot anfordern</a>
+                    </nav>
+                </div>
+                <div class="backdrop" id="backdrop" hidden></div>
             </div>
             <div class="welcomecontent">
                 <div class="innerwelcomecontent">
                     <div class="ratingstars">
                         <img class="starsimg" src="img/stars.png" alt="Bewertung 5 Sterne">
-                        <p class="welcometext">5.0/5.0 <strong>Sterne</strong> auf Google</p>
+                        <p class="welcometext welcometext1">5.0/5.0 <strong>Sterne</strong> auf Google</p>
                     </div>
                     <div class="welcomeheader">
                         <h1>Professioneller Garten- und Hausmeisterservice in Lauta & Umgebung</h1>
                     </div>
                     <div class="welcomespeak">
-                        <p class="welcometext">KW Dienstleistungen ist Ihr zuverlässiger Ansprechpartner für Gartenpflege, Gartengestaltung, Grünflächenpflege, Hausmeisterservice, Winterdienst und Objektbetreuung - privat, gewerblich & kommunal.</p>
+                        <p class="welcometext welcometext2">KW Dienstleistungen ist Ihr zuverlässiger Ansprechpartner für Gartenpflege, Gartengestaltung, Grünflächenpflege, Hausmeisterservice, Winterdienst und Objektbetreuung - privat, gewerblich & kommunal.</p>
                     </div>
                     <button class="button" type="submit">Leistungen ansehen</button>
                 </div>
