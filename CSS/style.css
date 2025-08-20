@@ -4,11 +4,9 @@
     font-weight: 400;
     font-style: normal;
 }
-
 html {
         scroll-behavior: smooth;
 }
-
 body {
     font-family: 'Figtree', sans-serif;
     font-weight: 400;
@@ -16,38 +14,138 @@ body {
     padding: 0;
     overflow-x: hidden;
 }
+p {
+    padding: 0;
+    margin: 0;
+}
 
-/* Header */
+/* Header Section */
 
 header {
    width: 100%;
    display: flex;
    justify-content: center;
 }
-
 .innerheader {
     width: 100%;
     max-width: 1200px;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 1.3rem;
+    padding-top: 1.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.1rem;
 }
-
 .imgheader {
     height: 1.5rem;
 }
-
 .headdata {
     display: flex;
     gap: 3rem;
 }
-
 .headphone, .headmail {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+/* Welcome Section */
+
+.welcome {
+    background-image: url('../img/background1.jpg');
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+.innerwelcome {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbarleft {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logoimg {
+    width: 7vw;
+    background-color: white;
+    border-radius: 5px;
+}
+.link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.link:hover {
+    text-decoration: overline underline;    
+}
+.navbarright {
+    display: flex;
+    align-items: center;
+}
+.button {
+    background-color: #39B44A;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: background-color 0.8s ease;
+}
+.button:hover {
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+}
+.welcomecontent {
+    width: 100%;
+    display: flex;  
+    justify-content: center;
+}
+.innerwelcomecontent {
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ratingstars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.starsimg {
+    max-width: 7vw;
+}
+.welcometext {
+    color: white;
+    font-size: 1.1rem;
+}
+h1 {
+    color: white;
+    font-size: 3rem;
+}
+.welcomespeak {
+    margin-bottom: 3vh;
 }
 
 /* Responsive Design */
