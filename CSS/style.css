@@ -265,6 +265,7 @@ h1 {
     font-size: 2rem;
     color: black;
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 .signature {
     width: 8vw;
@@ -278,6 +279,7 @@ h1 {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 10vh;
 }
 .innerfotoline {
     width: 100%;
@@ -323,6 +325,68 @@ h1 {
 }
 @media (prefers-reduced-motion: reduce) {
   .marquee__track { animation: none; }
+}
+
+/* Benefits Section */
+
+.benefits {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+.innerbenefits {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.leftbenefits {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.benefittext {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.socialicon {
+    width: 2rem;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.socialicon:hover {
+    transform: scale(1.2);
+}
+.benefitbutton {
+    padding-left: 0;
+}
+.rightbenefits {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+.benefitbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 25vh;
+    border-top: 1px solid lightgrey;
+}
+.boxheader {
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+.boxtext {
+    color: grey;
+    font-size: 1rem;
 }
 
 /* Responsive Design */
