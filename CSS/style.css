@@ -68,7 +68,6 @@ header {
     flex-direction: column;
 }
 .navbar {
-    margin-top: 0.5rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -78,11 +77,13 @@ header {
     display: flex;
     align-items: center;
     gap: 1rem;
+    font-size: 1.1rem;;
 }
 .logoimg {
     width: 8vw;
     background-color: white;
-    border-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .link {
     text-decoration: none;
@@ -92,10 +93,19 @@ header {
 .link:hover {
     text-decoration: overline underline;    
 }
+.firstbutton {
+    background-color: white;
+    color: black;
+}
+.firstbutton:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
 .burger { 
     display: none; 
     font-size: 2rem; 
-    line-height: 1; 
+    line-height: 1.5; 
     background: none; 
     border: 0; 
     cursor: pointer; 
@@ -111,6 +121,9 @@ header {
     z-index: 1001;
     display: flex; flex-direction: column;
     padding: 1.25rem;
+}
+.burgerlinks {
+    border-bottom: 1px solid #eee;
 }
 .offcanvas.open { 
     transform: translateX(0); 
@@ -161,9 +174,11 @@ header {
     display: flex;
     align-items: center;
 }
-.button {
+.secondbutton {
     background-color: #39B44A;
     color: white;
+}
+.button {
     font-size: 1rem;
     padding: 1rem;
     padding-left: 2rem;
@@ -173,8 +188,9 @@ header {
     text-decoration: none;
     box-sizing: border-box;
     transition: background-color 0.8s ease;
+    border: none;
 }
-.button:hover {
+.secondbutton:hover {
     background-color: darkgreen;
     color: white;
     cursor: pointer;
@@ -237,7 +253,7 @@ h1 {
 .ownerimg {
     width: 25vw;
     height: auto;
-    border-radius: 50%;
+    border-radius: 5px;
     margin-bottom: 2rem;
 }
 .workcontext {
@@ -303,9 +319,8 @@ h1 {
     }
     .navbar {
         justify-content: center;
-    }
+    }  
     .innerowner {
-        flex-direction: column-reverse;
         align-items: center;
         text-align: center;
         gap: 2rem;
@@ -332,7 +347,13 @@ h1 {
         max-width: 10vw;
     }
     .innerowner {
-        font-size: 0.9rem;;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+    }
+     .ownerimg {
+        width: 50vw;
+        height: auto;
     }
 }
 
@@ -362,22 +383,21 @@ h1 {
     .navbarleft .link { 
         display: none; 
     }
+    .navbarright {
+        justify-content: flex-end;
+    }
     .burger { 
-        display: inline-block; 
-        grid-column: 3; 
-        justify-self: end; }
+        display: block;
+        justify-self: end; 
+    }
     .firstbutton { 
         display: none; 
     }
     .no-scroll { 
         overflow: hidden; 
     }
-    .workcontext {
-        display: none;
-    }
-    .ownerimg {
-        width: 50vw;
-        height: auto;
+    .ownerheader {
+        font-size: 1.7rem;
     }
 }
 
@@ -387,6 +407,9 @@ h1 {
     }
     .titleowner {
         font-size: 1.0rem;
+    }
+    .ownerheader {
+        font-size: 1.5rem;
     }
 }
 
